@@ -23,6 +23,11 @@
                                     <constraint firstAttribute="width" priority="750" constant="800" id="hOZ-98-Cbv"/>
                                     <constraint firstAttribute="width" secondItem="PIP-tw-9px" secondAttribute="height" multiplier="5:8" id="jJf-FC-Yjw"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.31526080896614095" green="0.73683190739559346" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
