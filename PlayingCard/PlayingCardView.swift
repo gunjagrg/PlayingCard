@@ -17,9 +17,21 @@ class PlayingCardView: UIView {
     var suit: String = "❤️" { didSet { setNeedsDisplay(); setNeedsLayout() }}
     @IBInspectable
     var isFaceUp: Bool = true { didSet { setNeedsDisplay(); setNeedsLayout() }}
-    
+    var faceCardScale: CGFloat = SizeRatio.faceCardImageSizeToBoundsSize { didSet { setNeedsDisplay() }}
     private var cornerString: NSAttributedString {
         return centeredAttributedString(rankString+"\n"+suit, fontSize: cornerFontSize)
+    }
+    private lazy var upperLeftCornerLabel = createCornerLabel()
+    private lazy var lowerRightCornerLabel = createCornerLabel()
+    
+
+    @objc func adjustFaceCardScale(byHandlingGestureRecognizedBy recognizer: UIPinchGestureRecognizer) {
+        switch recognizer.state {
+        case .changed, .ended:
+            faceCardScale *= recognizer.scale
+            recognizer.scale = 1.0
+        default: break
+        }
     }
     
     private func centeredAttributedString(_ string: String, fontSize: CGFloat) -> NSAttributedString {
@@ -30,9 +42,6 @@ class PlayingCardView: UIView {
         return NSAttributedString(string: string, attributes: [.paragraphStyle: paragraphStyle, .font: font])
     }
     
-    private lazy var upperLeftCornerLabel = createCornerLabel()
-    private lazy var lowerRightCornerLabel = createCornerLabel()
-        
     private func createCornerLabel() -> UILabel {
         let label = UILabel()
         label.numberOfLines = 0
@@ -75,7 +84,7 @@ class PlayingCardView: UIView {
         
         if isFaceUp {
             if let faceCardImage = UIImage(named: rankString+suit, in: Bundle(for: self.classForCoder), compatibleWith: traitCollection) {
-                faceCardImage.draw(in: bounds.zoom(by: SizeRatio.faceCardImageSizeToBoundsSize))
+                faceCardImage.draw(in: bounds.zoom(by: faceCardScale))
             } else {
                 drawPips()
             }
