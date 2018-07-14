@@ -58,7 +58,6 @@ struct PlayingCard: CustomStringConvertible
                 allRanks.append(Rank.numeric(pips))
             }
             allRanks += [Rank.face("J"), .face("Q"), .face("K")]
-            
             return allRanks
         }
         
