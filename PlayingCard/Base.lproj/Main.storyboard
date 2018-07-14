@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view opaque="NO" contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PIP-tw-9px" customClass="PlayingCardView" customModule="PlayingCard" customModuleProvider="target">
-                                <rect key="frame" x="16" y="72" width="92" height="143"/>
+                                <rect key="frame" x="244" y="181" width="92" height="143"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <userDefinedRuntimeAttributes>
@@ -74,7 +74,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view opaque="NO" contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Be4-xx-qwz" customClass="PlayingCardView" customModule="PlayingCard" customModuleProvider="target">
-                                <rect key="frame" x="251" y="190" width="92" height="143"/>
+                                <rect key="frame" x="29" y="48" width="92" height="143"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <userDefinedRuntimeAttributes>
@@ -85,7 +85,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view opaque="NO" contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ePE-JZ-WDU" customClass="PlayingCardView" customModule="PlayingCard" customModuleProvider="target">
-                                <rect key="frame" x="129" y="370" width="92" height="143"/>
+                                <rect key="frame" x="150" y="357" width="92" height="143"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <userDefinedRuntimeAttributes>
@@ -107,7 +107,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view opaque="NO" contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lpC-fL-dip" customClass="PlayingCardView" customModule="PlayingCard" customModuleProvider="target">
-                                <rect key="frame" x="302" y="352" width="92" height="143"/>
+                                <rect key="frame" x="16" y="556" width="92" height="143"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <userDefinedRuntimeAttributes>
@@ -118,7 +118,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view opaque="NO" contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GHQ-1Y-DRb" customClass="PlayingCardView" customModule="PlayingCard" customModuleProvider="target">
-                                <rect key="frame" x="16" y="556" width="92" height="143"/>
+                                <rect key="frame" x="302" y="348" width="92" height="143"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <userDefinedRuntimeAttributes>
@@ -139,7 +139,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view opaque="NO" contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Et4-GX-oKk" customClass="PlayingCardView" customModule="PlayingCard" customModuleProvider="target">
-                                <rect key="frame" x="161" y="530" width="92" height="143"/>
+                                <rect key="frame" x="161" y="531" width="92" height="143"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <userDefinedRuntimeAttributes>
